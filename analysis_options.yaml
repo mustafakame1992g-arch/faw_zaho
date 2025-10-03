@@ -1,0 +1,42 @@
+# analysis_options.yaml
+//include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - 'build/**'
+    - '.dart_tool/**'
+
+  errors:
+    missing_required_param: error
+    missing_return: error
+    unused_element: warning
+
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    - always_declare_return_types
+    - annotate_overrides
+    - avoid_init_to_null
+    - avoid_return_types_on_setters
+    - avoid_unused_constructor_parameters
+    - curly_braces_in_flow_control_structures
+    - empty_catches
+    - library_names
+    - library_prefixes
+    - no_duplicate_case_values
+    - null_closures
+    - prefer_adjacent_string_concatenation
+    - prefer_collection_literals
+    - prefer_final_fields
+    - prefer_final_in_for_each
+    - prefer_final_locals
+    - prefer_foreach
+    - prefer_if_null_operators
+    - prefer_null_aware_operators
+    - prefer_single_quotes
+    - prefer_spread_collections

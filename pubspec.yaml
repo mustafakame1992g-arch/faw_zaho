@@ -1,0 +1,76 @@
+name: al_faw_zakho
+description: تطبيق تجمع الفاو زاخو - منصة سياسية شاملة
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.2.4  # تحقق من أحدث إصدار
+  encrypt: ^5.0.1  # تحقق من أحدث إصدار
+  cupertino_icons: ^1.0.2
+  
+  uuid: ^4.2.1
+  image_picker: ^1.0.4
+  path: ^1.8.3
+
+  # State Management
+  provider: ^6.0.5
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.20.2
+  
+  # Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.1.0
+  path_provider: ^2.1.1
+  
+  # Networking
+  dio: ^5.1.0
+  connectivity_plus: ^7.0.0
+  meta: ^1.10.0
+  json_annotation: ^4.8.1
+
+  # UI Enhancements
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.7
+  
+  # Utilities
+  equatable: ^2.0.5
+  logger: ^2.6.1
+  presentation: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  analyzer: ^6.4.1  # ← الإصدار المتوافق
+  import_path_converter: ^1.0.1
+
+flutter:
+  uses-material-design: true
+  #generate: true
+  
+  assets:
+    #- assets/images/m.png
+    - assets/images/logo.png
+    #- assets/images/candidates/
+  
+  fonts:
+   - family: Tajawal
+     fonts:
+      - asset: assets/fonts/Tajawal-Regular.ttf
+#    - family: CustomKurdish
+#      fonts:
+#        - asset: assets/fonts/kurdish_font.ttf
